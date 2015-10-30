@@ -130,7 +130,7 @@ class Sender(object):
 
         response_data_header = sock.recv(8)
         response_data_header = response_data_header[:4]
-        response_len = unpack('i', response_data_header)
+        response_len = unpack('i', response_data_header)[0]
 
         response_raw = sock.recv(response_len)
 
