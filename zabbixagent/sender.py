@@ -82,7 +82,6 @@ class Sender(object):
         except Exception:
             raise
         else:
-            self._logger.debug('send result: %s' % result)
             self._database.delete_items(items)
             processed, failed, total = self._parse_processed_message(result['info'])
             result = 'Processed %s Faild %s Total %s' % (processed, failed, total)
