@@ -103,7 +103,6 @@ class Sender(object):
 
         request = dict(request='sender data', clock=self._process_date, data=request_data)
         request = dumps(request)
-        self._logger.debug('request is %s' % request)
         return self._send_request(request)
 
     def _send_request(self, request):
