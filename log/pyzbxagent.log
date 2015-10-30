@@ -1,0 +1,698 @@
+2015-10-28 15:59:57,199 [1326 ] zabbixagent                        :     INFO Application start up
+2015-10-28 16:09:47,729 [1368 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:01:12,223 [1948 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:03:55,228 [1956 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:04:37,506 [1964 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:07:19,795 [1983 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:08:10,846 [1991 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:13:34,000 [2013 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:15:34,158 [2030 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:15:43,101 [2034 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:15:49,398 [2040 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:16:35,291 [2040 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 15:18:26,618 [2050 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:18:33,890 [2050 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 15:21:29,569 [2050 ] zabbixagent                        :    ERROR An error occurred: thread.__init__() not called
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 157, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 173, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 23, in start
+    self._start_items()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 29, in _start_items
+    item.start()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py", line 737, in start
+    raise RuntimeError("thread.__init__() not called")
+RuntimeError: thread.__init__() not called
+2015-10-29 15:30:31,884 [2091 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:30:53,477 [2096 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:30:53,484 [2096 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 15:39:53,727 [2143 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:40:17,274 [2146 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:40:17,282 [2146 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 15:40:17,282 [2146 ] zabbixagent                        :    ERROR An error occurred: a float is required
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 157, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 173, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 25, in start
+    time.sleep(self._update_interval)
+TypeError: a float is required
+2015-10-29 15:42:44,017 [2157 ] zabbixagent                        :     INFO Application start up
+2015-10-29 15:42:44,028 [2157 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:38:49,303 [2556 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:38:49,311 [2556 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:38:49,311 [2556 ] zabbixagent                        :    ERROR An error occurred: unsupported operand type(s) for /: 'str' and 'int'
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 28, in start
+    self._setup_update_interval()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 25, in _setup_update_interval
+    self._update_interval = minimun_update_interval / 2
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+2015-10-29 17:39:33,199 [2560 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:39:33,206 [2560 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:39:33,207 [2560 ] zabbixagent                        :    ERROR An error occurred: 'Database' object has no attribute 'insert_values'
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 36, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 50, in _write_item_values_to_datase
+    self._database.insert_values(item_values)
+AttributeError: 'Database' object has no attribute 'insert_values'
+2015-10-29 17:40:03,397 [2565 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:40:03,402 [2565 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:40:03,403 [2565 ] zabbixagent                        :    ERROR An error occurred: need more than 2 values to unpack
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 36, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 50, in _write_item_values_to_datase
+    self._database.insert_value(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/database.py", line 45, in insert_value
+    for key, value,entry_date in values.items():
+ValueError: need more than 2 values to unpack
+2015-10-29 17:44:46,388 [2586 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:44:46,393 [2586 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:44:46,393 [2586 ] zabbixagent.controller             :    DEBUG get item_values {'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 17:44:46,393 [2586 ] zabbixagent                        :    ERROR An error occurred: need more than 2 values to unpack
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 37, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 51, in _write_item_values_to_datase
+    self._database.insert_value(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/database.py", line 45, in insert_value
+    for key, value, entry_date in values.items():
+ValueError: need more than 2 values to unpack
+2015-10-29 17:45:39,943 [2598 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:45:39,947 [2598 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:45:39,948 [2598 ] zabbixagent.controller             :    DEBUG get item_values {'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 17:45:39,948 [2598 ] zabbixagent                        :    ERROR An error occurred: need more than 2 values to unpack
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 37, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 51, in _write_item_values_to_datase
+    self._database.insert_values(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/database.py", line 46, in insert_values
+    for key, value, entry_date in values.items():
+ValueError: need more than 2 values to unpack
+2015-10-29 17:46:24,521 [2157 ] zabbixagent                        :     INFO Received signal 2
+2015-10-29 17:46:24,522 [2157 ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-29 17:46:24,522 [2157 ] zabbixagent                        :     INFO Shutdown
+2015-10-29 17:46:26,113 [2609 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:46:26,117 [2609 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:46:26,118 [2609 ] zabbixagent.controller             :    DEBUG get item_values {'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 17:46:26,118 [2609 ] zabbixagent                        :    ERROR An error occurred: need more than 2 values to unpack
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 37, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 52, in _write_item_values_to_datase
+    self._database.insert_values(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/database.py", line 45, in insert_values
+    for key, value, entry_date in values.items():
+ValueError: need more than 2 values to unpack
+2015-10-29 17:50:44,267 [2630 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:50:44,272 [2630 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:50:44,272 [2630 ] zabbixagent.items.kernel_version   :    DEBUG put {'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-29 17:50:44,272 [2630 ] zabbixagent.controller             :    DEBUG get item_values {'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 17:50:44,273 [2630 ] zabbixagent                        :    ERROR An error occurred: need more than 2 values to unpack
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 37, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 52, in _write_item_values_to_datase
+    self._database.insert_values(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/database.py", line 45, in insert_values
+    for key, value, entry_date in values.items():
+ValueError: need more than 2 values to unpack
+2015-10-29 17:51:43,522 [2638 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:51:43,527 [2638 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:51:43,527 [2638 ] zabbixagent.items.kernel_version   :    DEBUG put {'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-29 17:51:43,528 [2638 ] zabbixagent.controller             :    DEBUG get item_values {'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 17:51:43,528 [2638 ] zabbixagent                        :    ERROR An error occurred: 'entry_date'
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 37, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 51, in _write_item_values_to_datase
+    print item_values['entry_date']
+KeyError: 'entry_date'
+2015-10-29 17:53:21,197 [2644 ] zabbixagent                        :     INFO Application start up
+2015-10-29 17:53:21,202 [2644 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 17:53:21,202 [2644 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446112401.202525, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-29 17:53:21,202 [2644 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446112401.202525, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 17:53:21,202 [2644 ] zabbixagent                        :    ERROR An error occurred: need more than 2 values to unpack
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 37, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 52, in _write_item_values_to_datase
+    self._database.insert_values(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/database.py", line 45, in insert_values
+    for key, value, entry_date in values.items():
+ValueError: need more than 2 values to unpack
+2015-10-29 18:01:48,650 [2673 ] zabbixagent                        :     INFO Application start up
+2015-10-29 18:01:48,654 [2673 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 18:01:48,654 [2673 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446112908.654941, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-29 18:01:48,655 [2673 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446112908.654941, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 18:04:08,787 [2673 ] zabbixagent                        :     INFO Received signal 2
+2015-10-29 18:04:08,787 [2673 ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-29 18:04:08,787 [2673 ] zabbixagent                        :     INFO Shutdown
+2015-10-29 18:05:42,251 [2690 ] zabbixagent                        :     INFO Application start up
+2015-10-29 18:05:42,259 [2690 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 18:05:42,259 [2690 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446113142.259629, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-29 18:05:42,260 [2690 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446113142.259629, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 18:05:42,260 [2690 ] zabbixagent                        :    ERROR An error occurred: 'function' object is not iterable
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 159, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 175, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 30, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 37, in _process_until_shutdown
+    self._write_item_values_to_datase(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 51, in _write_item_values_to_datase
+    self._database.insert_values(item_values)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/database.py", line 46, in insert_values
+    for key, value in lambda (x,y): (x,y) in values.items() and x != 'entry_date':
+TypeError: 'function' object is not iterable
+2015-10-29 18:07:02,093 [2698 ] zabbixagent                        :     INFO Application start up
+2015-10-29 18:07:02,099 [2698 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 18:07:02,099 [2698 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446113222.099769, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-29 18:07:02,100 [2698 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446113222.099769, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 18:07:16,771 [2698 ] zabbixagent                        :     INFO Received signal 2
+2015-10-29 18:07:16,772 [2698 ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-29 18:07:16,772 [2698 ] zabbixagent                        :     INFO Shutdown
+2015-10-29 18:07:35,725 [2707 ] zabbixagent                        :     INFO Application start up
+2015-10-29 18:07:35,732 [2707 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-29 18:07:35,732 [2707 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446113255.732581, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-29 18:07:35,732 [2707 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446113255.732581, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-29 18:07:38,166 [2707 ] zabbixagent                        :     INFO Received signal 2
+2015-10-29 18:07:38,166 [2707 ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-29 18:07:38,167 [2707 ] zabbixagent                        :     INFO Shutdown
+2015-10-30 09:13:45,064 [665  ] zabbixagent                        :     INFO Application start up
+2015-10-30 09:13:45,073 [665  ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 09:13:45,074 [665  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446167625.074494, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:13:45,074 [665  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446167625.074494, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:26:57,437 [665  ] zabbixagent                        :     INFO Received signal 2
+2015-10-30 09:26:57,438 [665  ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-30 09:26:57,439 [665  ] zabbixagent                        :     INFO Shutdown
+2015-10-30 09:27:21,201 [746  ] zabbixagent                        :     INFO Application start up
+2015-10-30 09:27:21,208 [746  ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 09:27:21,209 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168441.208956, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:27:21,209 [746  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446168441.208956, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:28:01,213 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168481.213365, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:28:41,215 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168521.215169, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:29:21,218 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168561.21857, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:30:01,222 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168601.222809, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:30:41,227 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168641.227359, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:31:21,231 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168681.231262, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:32:01,235 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168721.23535, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:32:41,238 [746  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446168761.23804, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:33:13,688 [746  ] zabbixagent                        :     INFO Received signal 2
+2015-10-30 09:33:13,689 [746  ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-30 09:33:13,689 [746  ] zabbixagent                        :     INFO Shutdown
+2015-10-30 09:37:00,771 [772  ] zabbixagent                        :     INFO Application start up
+2015-10-30 09:37:00,776 [772  ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 09:37:00,778 [772  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169020.778811, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:37:00,779 [772  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446169020.778811, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:37:40,782 [772  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169060.781924, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:38:20,785 [772  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169100.785548, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:38:24,356 [772  ] zabbixagent                        :     INFO Received signal 2
+2015-10-30 09:38:24,356 [772  ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-30 09:38:24,356 [772  ] zabbixagent                        :     INFO Shutdown
+2015-10-30 09:38:27,680 [782  ] zabbixagent                        :     INFO Application start up
+2015-10-30 09:38:27,687 [782  ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 09:38:27,687 [782  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169107.687486, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:39:07,690 [782  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169147.690624, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:39:07,821 [782  ] zabbixagent                        :     INFO Received signal 2
+2015-10-30 09:39:07,822 [782  ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-30 09:39:07,822 [782  ] zabbixagent                        :     INFO Shutdown
+2015-10-30 09:39:09,337 [789  ] zabbixagent                        :     INFO Application start up
+2015-10-30 09:39:09,342 [789  ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 09:39:09,343 [789  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169149.343698, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:39:09,343 [789  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446169149.343698, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:39:49,346 [789  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169189.346526, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:39:49,346 [789  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446169189.346526, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:40:15,207 [789  ] zabbixagent                        :     INFO Received signal 2
+2015-10-30 09:40:15,207 [789  ] zabbixagent                        :     INFO Initiating shutdown
+2015-10-30 09:40:15,208 [789  ] zabbixagent                        :     INFO Shutdown
+2015-10-30 09:40:41,615 [807  ] zabbixagent                        :     INFO Application start up
+2015-10-30 09:40:41,621 [807  ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 09:40:41,622 [807  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169241.621954, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:40:41,622 [807  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446169241.621954, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:40:51,626 [807  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169251.626835, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:40:51,627 [807  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446169251.626835, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:41:01,629 [807  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446169261.628958, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:41:01,629 [807  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446169261.628958, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:59:17,849 [842  ] zabbixagent                        :     INFO Application start up
+2015-10-30 09:59:17,855 [842  ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 09:59:17,856 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170357.85612, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:59:17,856 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170357.85612, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:59:27,859 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170367.85942, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:59:27,859 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170367.85942, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:59:37,863 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170377.863511, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:59:37,863 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170377.863511, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:59:47,867 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170387.867727, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:59:47,868 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170387.867727, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 09:59:57,872 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170397.872539, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 09:59:57,873 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170397.872539, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 10:00:07,874 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170407.873964, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 10:00:07,874 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170407.873964, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 10:00:17,879 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170417.879806, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 10:00:17,880 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170417.879806, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 10:00:27,883 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170427.883177, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 10:00:27,883 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170427.883177, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 10:00:37,888 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170437.888546, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 10:00:37,889 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170437.888546, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 10:00:47,890 [842  ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446170447.890493, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 10:00:47,890 [842  ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446170447.890493, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:35:13,847 [1969 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:35:13,856 [1969 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:35:13,857 [1969 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176113.857781, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:35:13,858 [1969 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176113.857781, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:35:13,860 [1969 ] zabbixagent                        :    ERROR An error occurred: 'Sender' object has no attribute 'Send'
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 174, in start
+    self._try_to_start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/agentapp.py", line 190, in _try_to_start
+    item_process.start()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 32, in start
+    self._process_until_shutdown()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/controller.py", line 44, in _process_until_shutdown
+    self._sender.Send()
+AttributeError: 'Sender' object has no attribute 'Send'
+2015-10-30 11:35:23,863 [1969 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176123.863649, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:35:28,318 [1975 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:35:28,329 [1975 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:35:28,330 [1975 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176128.330074, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:35:28,330 [1975 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176128.330074, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:35:28,335 [1975 ] zabbixagent.sender                 :  WARNING An error is occurred when sending items not enough arguments for format string
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 60, in _send_pending_data
+    self._try_to_send_pending_data()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 71, in _try_to_send_pending_data
+    self._logger.info('Send a total of %s items to Zabbix server%s' % len(items), forced)
+TypeError: not enough arguments for format string
+2015-10-30 11:35:38,335 [1975 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176138.335533, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:35:38,335 [1975 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176138.335533, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:01,477 [1982 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:36:01,485 [1982 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:36:01,486 [1982 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176161.48615, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:36:01,486 [1982 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176161.48615, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:01,488 [1982 ] zabbixagent.sender                 :     INFO Send a total of 26 items to Zabbix server
+2015-10-30 11:36:01,489 [1982 ] zabbixagent.sender                 :  WARNING An error is occurred when sending items 'Sender' object has no attribute '_sen_request'
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 60, in _send_pending_data
+    self._try_to_send_pending_data()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 74, in _try_to_send_pending_data
+    self._send_items(items[:chunk_size])
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 81, in _send_items
+    result = self._try_to_send_items(items)
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 106, in _try_to_send_items
+    return self._sen_request(request)
+AttributeError: 'Sender' object has no attribute '_sen_request'
+2015-10-30 11:36:11,491 [1982 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176171.491056, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:36:11,491 [1982 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176171.491056, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:14,802 [1985 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:36:14,810 [1985 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:36:14,810 [1985 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176174.81062, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:36:14,810 [1985 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176174.81062, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:14,813 [1985 ] zabbixagent.sender                 :     INFO Send a total of 28 items to Zabbix server
+2015-10-30 11:36:14,815 [1985 ] zabbixagent.sender                 :  WARNING An error is occurred when sending items 'Sender' object has no attribute '_parse_processed_message'
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 60, in _send_pending_data
+    self._try_to_send_pending_data()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 74, in _try_to_send_pending_data
+    self._send_items(items[:chunk_size])
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 86, in _send_items
+    processed, failed, total = self._parse_processed_message(result['info'])
+AttributeError: 'Sender' object has no attribute '_parse_processed_message'
+2015-10-30 11:36:24,815 [1985 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176184.815461, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:36:24,815 [1985 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176184.815461, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:34,816 [1985 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176194.816738, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:36:34,817 [1985 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176194.816738, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:38,976 [1991 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:36:38,981 [1991 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:36:38,982 [1991 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176198.981965, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:36:38,982 [1991 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176198.981965, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:38,984 [1991 ] zabbixagent.sender                 :     INFO Send a total of 3 items to Zabbix server
+2015-10-30 11:36:38,989 [1991 ] zabbixagent.sender                 :  WARNING An error is occurred when sending items not enough arguments for format string
+Traceback (most recent call last):
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 60, in _send_pending_data
+    self._try_to_send_pending_data()
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 74, in _try_to_send_pending_data
+    self._send_items(items[:chunk_size])
+  File "/Users/zhangpanpan/PycharmProjects/zabbixagent/zabbixagent/sender.py", line 87, in _send_items
+    result = 'Processed %s Faild %s Total %s' % processed, failed, total
+TypeError: not enough arguments for format string
+2015-10-30 11:36:48,983 [1991 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176208.983074, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:36:48,983 [1991 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176208.983074, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:55,994 [1996 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:36:56,002 [1996 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:36:56,003 [1996 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176216.003467, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:36:56,003 [1996 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176216.003467, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:36:56,006 [1996 ] zabbixagent.sender                 :     INFO Send a total of 2 items to Zabbix server
+2015-10-30 11:36:56,008 [1996 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 2 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:36:56,008 [1996 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:37:01,409 [2001 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:37:01,414 [2001 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:37:01,414 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176221.414618, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:37:01,414 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176221.414618, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:37:01,416 [2001 ] zabbixagent.sender                 :     INFO Send a total of 1 items to Zabbix server
+2015-10-30 11:37:01,418 [2001 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 1 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:37:01,418 [2001 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:37:11,419 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176231.419662, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:37:11,420 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176231.419662, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:37:21,424 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176241.424497, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:37:21,424 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176241.424497, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:37:31,430 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176251.429897, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:37:31,430 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176251.429897, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:37:41,434 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176261.434019, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:37:41,434 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176261.434019, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:37:51,437 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176271.436957, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:37:51,437 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176271.436957, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:38:01,440 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176281.44008, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:38:01,440 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176281.44008, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:38:11,445 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176291.44525, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:38:11,445 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176291.44525, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:38:21,452 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176301.451758, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:38:21,451 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176301.451758, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:38:31,458 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176311.458008, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:38:31,458 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176311.458008, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:38:41,459 [2001 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176321.459767, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:38:41,460 [2001 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176321.459767, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:44:22,058 [2022 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:44:22,063 [2022 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:44:22,063 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176662.063885, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:44:22,064 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176662.063885, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:44:22,066 [2022 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176231.419662, 'key': u'system.kernel.version', 'id': 1}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176241.424497, 'key': u'system.kernel.version', 'id': 2}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176251.429897, 'key': u'system.kernel.version', 'id': 3}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176261.434019, 'key': u'system.kernel.version', 'id': 4}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176271.436957, 'key': u'system.kernel.version', 'id': 5}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176281.44008, 'key': u'system.kernel.version', 'id': 6}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176291.44525, 'key': u'system.kernel.version', 'id': 7}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176301.451758, 'key': u'system.kernel.version', 'id': 8}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176311.458008, 'key': u'system.kernel.version', 'id': 9}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176321.459767, 'key': u'system.kernel.version', 'id': 10}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176662.063885, 'key': u'system.kernel.version', 'id': 11}]
+2015-10-30 11:44:22,066 [2022 ] zabbixagent.sender                 :     INFO Send a total of 11 items to Zabbix server
+2015-10-30 11:44:22,070 [2022 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 11 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:44:22,071 [2022 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:44:32,067 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176672.067451, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:44:32,067 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176672.067451, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:44:42,072 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176682.072782, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:44:42,073 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176682.072782, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:44:52,077 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176692.077328, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:44:52,078 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176692.077328, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:45:02,081 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176702.081786, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:45:02,082 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176702.081786, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:45:12,087 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176712.087181, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:45:12,087 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176712.087181, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:45:22,092 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176722.092612, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:45:22,093 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176722.092612, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:45:32,098 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176732.097936, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:45:32,098 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176732.097936, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:45:42,100 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176742.100667, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:45:42,101 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176742.100667, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:45:52,105 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176752.105863, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:45:52,106 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176752.105863, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:46:02,111 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176762.110974, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:46:02,111 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176762.110974, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:46:12,115 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176772.115134, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:46:12,115 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176772.115134, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:46:22,118 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176782.118854, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:46:22,119 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176782.118854, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:46:32,124 [2022 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176792.124755, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:46:32,125 [2022 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176792.124755, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:48:02,824 [2040 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:48:02,829 [2040 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:48:02,830 [2040 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176882.830281, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:48:02,830 [2040 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176882.830281, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:48:02,832 [2040 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176672.067451, 'key': u'system.kernel.version', 'id': 1}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176682.072782, 'key': u'system.kernel.version', 'id': 2}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176692.077328, 'key': u'system.kernel.version', 'id': 3}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176702.081786, 'key': u'system.kernel.version', 'id': 4}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176712.087181, 'key': u'system.kernel.version', 'id': 5}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176722.092612, 'key': u'system.kernel.version', 'id': 6}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176732.097936, 'key': u'system.kernel.version', 'id': 7}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176742.100667, 'key': u'system.kernel.version', 'id': 8}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176752.105863, 'key': u'system.kernel.version', 'id': 9}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176762.110974, 'key': u'system.kernel.version', 'id': 10}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176772.115134, 'key': u'system.kernel.version', 'id': 11}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176782.118854, 'key': u'system.kernel.version', 'id': 12}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176792.124755, 'key': u'system.kernel.version', 'id': 13}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176882.830281, 'key': u'system.kernel.version', 'id': 14}]
+2015-10-30 11:48:02,833 [2040 ] zabbixagent.sender                 :     INFO Send a total of 14 items to Zabbix server
+2015-10-30 11:48:02,833 [2040 ] zabbixagent.sender                 :    DEBUG send result: {'info': 'Processed 0 Failed 0 Total 0 Seconds spent 0'}
+2015-10-30 11:48:02,836 [2040 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 14 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:48:02,836 [2040 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:48:12,835 [2040 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446176892.835767, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:48:12,836 [2040 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446176892.835767, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:51:05,061 [2062 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:51:05,070 [2062 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:51:05,070 [2062 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177065.070901, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:51:05,071 [2062 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177065.070901, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:51:05,072 [2062 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446176892.835767, 'key': u'system.kernel.version', 'id': 1}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177065.070901, 'key': u'system.kernel.version', 'id': 2}]
+2015-10-30 11:51:05,073 [2062 ] zabbixagent.sender                 :     INFO Send a total of 2 items to Zabbix server
+2015-10-30 11:51:05,073 [2062 ] zabbixagent.sender                 :    DEBUG this is a simulation
+2015-10-30 11:51:05,073 [2062 ] zabbixagent.sender                 :    DEBUG send result: {'info': 'Processed 0 Failed 0 Total 0 Seconds spent 0'}
+2015-10-30 11:51:05,075 [2062 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 2 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:51:05,075 [2062 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:51:27,773 [2067 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:51:27,780 [2067 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:51:27,780 [2067 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177087.780696, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:51:27,781 [2067 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177087.780696, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:51:27,783 [2067 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177087.780696, 'key': u'system.kernel.version', 'id': 1}]
+2015-10-30 11:51:27,783 [2067 ] zabbixagent.sender                 :     INFO Send a total of 1 items to Zabbix server
+2015-10-30 11:51:27,783 [2067 ] zabbixagent.sender                 :    DEBUG this is a simulation
+2015-10-30 11:51:27,783 [2067 ] zabbixagent.sender                 :    DEBUG send result: {'info': 'Processed 0 Failed 0 Total 0 Seconds spent 0'}
+2015-10-30 11:51:27,785 [2067 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 1 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:51:27,785 [2067 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:51:37,786 [2067 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177097.785989, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:51:37,786 [2067 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177097.785989, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:51:47,788 [2067 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177107.788724, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:51:47,789 [2067 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177107.788724, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:52:16,707 [2071 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:52:16,712 [2071 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:52:16,713 [2071 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177136.713198, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:52:16,713 [2071 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177136.713198, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:52:16,715 [2071 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177097.785989, 'key': u'system.kernel.version', 'id': 1}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177107.788724, 'key': u'system.kernel.version', 'id': 2}, {'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177136.713198, 'key': u'system.kernel.version', 'id': 3}]
+2015-10-30 11:52:16,715 [2071 ] zabbixagent.sender                 :     INFO Send a total of 3 items to Zabbix server
+2015-10-30 11:52:16,715 [2071 ] zabbixagent.sender                 :    DEBUG this is a simulation
+2015-10-30 11:52:16,715 [2071 ] zabbixagent.sender                 :    DEBUG send result: {'info': 'Processed 0 Failed 0 Total 0 Seconds spent 0'}
+2015-10-30 11:52:16,717 [2071 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 3 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:52:16,717 [2071 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:53:41,022 [2086 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:54:24,354 [2101 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:54:24,362 [2101 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:54:24,363 [2101 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177264.363358, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:54:24,363 [2101 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177264.363358, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:54:24,365 [2101 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177264.363358, 'key': u'system.kernel.version', 'id': 1}]
+2015-10-30 11:54:24,365 [2101 ] zabbixagent.sender                 :     INFO Send a total of 1 items to Zabbix server
+2015-10-30 11:54:24,365 [2101 ] zabbixagent.sender                 :    DEBUG simulate is false,
+2015-10-30 11:54:24,365 [2101 ] zabbixagent.sender                 :    DEBUG this is a simulation
+2015-10-30 11:54:24,365 [2101 ] zabbixagent.sender                 :    DEBUG send result: {'info': 'Processed 0 Failed 0 Total 0 Seconds spent 0'}
+2015-10-30 11:54:24,367 [2101 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 1 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:54:24,367 [2101 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:54:53,903 [2105 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:54:53,910 [2105 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:54:53,910 [2105 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177293.910754, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:54:53,911 [2105 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177293.910754, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:54:53,913 [2105 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177293.910754, 'key': u'system.kernel.version', 'id': 1}]
+2015-10-30 11:54:53,913 [2105 ] zabbixagent.sender                 :     INFO Send a total of 1 items to Zabbix server
+2015-10-30 11:54:53,913 [2105 ] zabbixagent.sender                 :    DEBUG simulate is False
+2015-10-30 11:54:53,914 [2105 ] zabbixagent.sender                 :    DEBUG this is a simulation
+2015-10-30 11:54:53,914 [2105 ] zabbixagent.sender                 :    DEBUG send result: {'info': 'Processed 0 Failed 0 Total 0 Seconds spent 0'}
+2015-10-30 11:54:53,916 [2105 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 1 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:54:53,916 [2105 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:55:11,042 [2108 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:55:11,047 [2108 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:55:11,048 [2108 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177311.048064, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:55:11,048 [2108 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177311.048064, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:55:11,052 [2108 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177311.048064, 'key': u'system.kernel.version', 'id': 1}]
+2015-10-30 11:55:11,052 [2108 ] zabbixagent.sender                 :     INFO Send a total of 1 items to Zabbix server
+2015-10-30 11:55:11,052 [2108 ] zabbixagent.sender                 :    DEBUG simulate is false
+2015-10-30 11:55:11,052 [2108 ] zabbixagent.sender                 :    DEBUG this is a simulation
+2015-10-30 11:55:11,052 [2108 ] zabbixagent.sender                 :    DEBUG send result: {'info': 'Processed 0 Failed 0 Total 0 Seconds spent 0'}
+2015-10-30 11:55:11,054 [2108 ] zabbixagent.sender                 :    DEBUG Processed a chunk of 1 items(Processed 0 Faild 0 Total 0)
+2015-10-30 11:55:11,054 [2108 ] zabbixagent.sender                 :     INFO Items successfully send to Zabbix server
+2015-10-30 11:56:29,802 [2120 ] zabbixagent                        :     INFO Application start up
+2015-10-30 11:56:29,810 [2120 ] zabbixagent.items.kernel_version   :    DEBUG Setup item KernelVersion
+2015-10-30 11:56:29,811 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177389.811549, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:56:29,811 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177389.811549, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:56:29,814 [2120 ] zabbixagent.sender                 :    DEBUG send items: [{'value': u'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64', 'entry_date': 1446177389.811549, 'key': u'system.kernel.version', 'id': 1}]
+2015-10-30 11:56:29,814 [2120 ] zabbixagent.sender                 :     INFO Send a total of 1 items to Zabbix server
+2015-10-30 11:56:29,815 [2120 ] zabbixagent.sender                 :    DEBUG simulate is False
+2015-10-30 11:56:29,815 [2120 ] zabbixagent.sender                 :  WARNING A socket error is occurred when sending items [Errno 61] Connection refused
+2015-10-30 11:56:39,817 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177399.817049, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:56:39,817 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177399.817049, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:56:49,821 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177409.821693, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:56:49,821 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177409.821693, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:56:59,825 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177419.825543, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:56:59,825 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177419.825543, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:57:09,830 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177429.830671, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:57:09,831 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177429.830671, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:57:19,835 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177439.835262, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:57:19,835 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177439.835262, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:57:29,840 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177449.840282, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:57:29,840 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177449.840282, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:57:39,845 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177459.845286, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:57:39,845 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177459.845286, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:57:49,849 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177469.849139, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:57:49,849 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177469.849139, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:57:59,852 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177479.852299, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:57:59,852 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177479.852299, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:58:09,856 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177489.856414, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:58:09,856 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177489.856414, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:58:19,861 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177499.86159, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:58:19,861 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177499.86159, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:58:29,865 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177509.865426, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:58:29,865 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177509.865426, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:58:39,868 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177519.868145, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:58:39,868 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177519.868145, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:58:49,872 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177529.872218, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:58:49,872 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177529.872218, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:58:59,876 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177539.87683, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:58:59,877 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177539.87683, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:59:09,881 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177549.881712, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:59:09,882 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177549.881712, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:59:19,887 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177559.887384, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:59:19,887 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177559.887384, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:59:29,891 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177569.891395, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:59:29,891 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177569.891395, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:59:39,894 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177579.894481, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:59:39,894 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177579.894481, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:59:49,899 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177589.89961, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:59:49,899 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177589.89961, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 11:59:59,904 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177599.904696, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 11:59:59,905 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177599.904696, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:00:09,909 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177609.909524, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:00:09,909 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177609.909524, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:00:19,913 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177619.913768, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:00:19,914 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177619.913768, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:00:29,919 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177629.919143, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:00:29,919 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177629.919143, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:00:39,924 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177639.924732, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:00:39,925 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177639.924732, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:00:49,928 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177649.928105, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:00:49,928 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177649.928105, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:00:59,931 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177659.931599, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:00:59,931 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177659.931599, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:01:09,934 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177669.93482, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:01:09,935 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177669.93482, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:01:19,939 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177679.939381, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:01:19,939 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177679.939381, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:01:29,944 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177689.944145, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:01:29,944 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177689.944145, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:01:39,949 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177699.949519, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:01:39,949 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177699.949519, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:01:49,955 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177709.955043, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:01:49,955 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177709.955043, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:01:59,960 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177719.960517, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:01:59,960 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177719.960517, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:02:09,965 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177729.964989, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:02:09,965 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177729.964989, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:02:19,968 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177739.968766, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:02:19,969 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177739.968766, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:02:29,972 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177749.972381, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:02:29,972 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177749.972381, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:02:39,976 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177759.976854, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:02:39,977 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177759.976854, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:02:49,981 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177769.981119, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:02:49,981 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177769.981119, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:02:59,983 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177779.983409, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:02:59,983 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177779.983409, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:03:09,989 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177789.989087, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:03:09,989 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177789.989087, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:03:19,994 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177799.994768, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:03:19,995 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177799.994768, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:03:29,999 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177809.999777, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:03:30,000 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177809.999777, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:03:40,001 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177820.001772, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:03:40,002 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177820.001772, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:03:50,005 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177830.005431, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:03:50,005 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177830.005431, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:04:00,008 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177840.008368, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:04:00,008 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177840.008368, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:04:10,012 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177850.012322, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:04:10,012 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177850.012322, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:04:20,017 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177860.01708, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:04:20,017 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177860.01708, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:04:30,021 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177870.0212, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:04:30,021 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177870.0212, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:04:40,024 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177880.02418, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:04:40,024 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177880.02418, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:04:50,028 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177890.028843, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:04:50,029 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177890.028843, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:05:00,033 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177900.033557, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:05:00,034 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177900.033557, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:05:10,038 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177910.03849, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:05:10,038 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177910.03849, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:05:20,043 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177920.043458, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:05:20,043 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177920.043458, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:05:30,048 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177930.048035, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:05:30,048 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177930.048035, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:05:40,052 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177940.051912, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:05:40,052 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177940.051912, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:05:50,056 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177950.056385, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:05:50,056 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177950.056385, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:06:00,060 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177960.060651, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:06:00,061 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177960.060651, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:06:10,065 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177970.065201, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:06:10,065 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177970.065201, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:06:20,068 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177980.067968, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:06:20,068 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177980.067968, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:06:30,073 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446177990.073605, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:06:30,074 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446177990.073605, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:06:40,077 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178000.077323, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:06:40,077 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178000.077323, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:06:50,081 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178010.081876, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:06:50,082 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178010.081876, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:07:00,087 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178020.087099, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:07:00,087 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178020.087099, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:07:10,092 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178030.092529, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:07:10,092 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178030.092529, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:07:20,097 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178040.097179, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:07:20,097 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178040.097179, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:07:30,101 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178050.101729, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:07:30,102 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178050.101729, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:07:40,106 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178060.106228, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:07:40,106 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178060.106228, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:07:50,111 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178070.111344, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:07:50,111 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178070.111344, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:08:00,114 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178080.114583, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:08:00,114 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178080.114583, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:08:10,118 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178090.118598, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:08:10,118 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178090.118598, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:08:20,123 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178100.123673, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:08:20,124 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178100.123673, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
+2015-10-30 12:08:30,126 [2120 ] zabbixagent.items.kernel_version   :    DEBUG put {'entry_date': 1446178110.126278, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'} in queue
+2015-10-30 12:08:30,126 [2120 ] zabbixagent.controller             :    DEBUG get item_values {'entry_date': 1446178110.126278, 'system.kernel.version': 'Darwin zhangpanpandeMacBook-Pro.local 15.0.0 Darwin Kernel Version 15.0.0: Wed Aug 26 16:57:32 PDT 2015; root:xnu-3247.1.106~1/RELEASE_X86_64 x86_64'}
