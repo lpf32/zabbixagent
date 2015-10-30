@@ -66,7 +66,6 @@ class Sender(object):
     def _try_to_send_pending_data(self):
         chunk_size = 200
         items = self._database.query_pending_items()
-        self._logger.debug('send items: %s' % items)
 
         forced = 'forced' if self._force else ''
         self._logger.info('Send a total of %s items to Zabbix server%s' % (len(items), forced))
@@ -105,12 +104,12 @@ class Sender(object):
 
         request = dict(request='sender data', clock=self._process_date, data=request_data)
         request = dumps(request)
+        self._logger.debug('request is %s' % request)
         return self._send_request(request)
 
     def _send_request(self, request):
         self._logger.debug('simulate is %s' % self._simulate)
         if self._simulate:
-            self._logger.debug('this is a simulation')
             return dict(info='Processed 0 Failed 0 Total 0 Seconds spent 0')
 
         request_length = len(request)
