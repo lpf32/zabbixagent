@@ -209,7 +209,7 @@ class AgentApp(object):
         logging.shutdown()
 
     def _daemonize(self):
-        if self._config.daemonize:
+        if self._options.daemonize:
             daemon.WORKDIR = self._base_dir
             daemon.createDaemon()
 
