@@ -123,7 +123,7 @@ class Sender(object):
 
         response_header = sock.recv(5)
         if not response_header == ZBX_HEADER:
-            raise ValueError('Invaild response')
+            raise ValueError('Invalid response')
 
         response_data_header = sock.recv(8)
         response_data_header = response_data_header[:4]
@@ -139,7 +139,7 @@ class Sender(object):
 
         return response
 
-    def _parse_processed_message(self,result):
+    def _parse_processed_message(self, result):
         match = ZBX_RESPONSE.match(result)
         try:
             processed, failed, total = map(int, match.groups())

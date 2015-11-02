@@ -37,12 +37,12 @@ class ItemProcessingController(object):
                 pass
             else:
                 self._logger.debug('get item_values %s' % item_values)
-                self._write_item_values_to_datase(item_values)
+                self._write_item_values_to_database(item_values)
                 self._sender.send()
 
     def _start_items(self):
         for item in self._items:
             item.start()
 
-    def _write_item_values_to_datase(self, item_values):
+    def _write_item_values_to_database(self, item_values):
         self._database.insert_values(item_values)
