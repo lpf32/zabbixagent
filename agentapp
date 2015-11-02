@@ -14,6 +14,7 @@ from zabbixagent.database import Database
 from zabbixagent.controller import ItemProcessingController
 from Queue import Queue
 from zabbixagent.sender import Sender
+from thirdparty import daemon
 
 class AgentApp(object):
 
@@ -35,6 +36,7 @@ class AgentApp(object):
         self._setup_options()
         self._setup_config()
         self._setup_pidfile_path()
+        self._daemonize()
         self._check_already_running()
         self._write_pidfile()
         self._setup_logging()
@@ -54,7 +56,7 @@ class AgentApp(object):
                                  help=u'configuration file')
 
         option_parser.add_option('-d', action='store_true', dest='daemonize',
-                                 default=False,
+                                 default=True,
                                  help=u'daemonize')
 
         self._options = option_parser.parse_args()[0]
@@ -205,6 +207,11 @@ class AgentApp(object):
     def _shutdown_logging(self):
         self._logger.info(u'Shutdown')
         logging.shutdown()
+
+    def _daemonize(self):
+        if self._config.daemonize:
+            daemon.WORKDIR = self._base_dir
+            daemon.createDaemon()
 
 
 
